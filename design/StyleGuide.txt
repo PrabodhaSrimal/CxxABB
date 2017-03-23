@@ -1,0 +1,47 @@
+C++ Terminology
+---------------
+
+Variable name / identifire
+Class
+Structure
+
+
+Rule of thumb
+-------------
+
+Compile with highest level of warning (-WAll)
+Compile with highest level of optimizations (-O3)
+Avoid extrenal source's warnings (#pragma GCC system_header)
+Rectify all compile level warnings
+Use static analysis of source (CppCheck)
+Use dynamic analysis of source (Valgrind)
+If possible, compile with more than one compilers
+*Premature optimization is the root of all evil*
+Optimization after profiling (gproff / oprofile)
+Trace system level calles - strace
+Optimize machine code - objdump -d
+
+
+Build Tools - GNU Make / SCons / CMake / AutoTools / (X)Jam
+
+Conventions
+-----------
+
+Folder names / Project structure
+Rule 1. 
+
+{src,test,lib,includes}
+
+Use root folder name to tally with library/component name
+Use subdirectories tally with namespace structure 
+
+
+File names
+Rule x.
+
+All Source files have extention .cpp
+All header flles have extention .h
+Header only source have extention .hpp
+
+Filenames should follow CamelCase 
+Use class name as file name whenever possible

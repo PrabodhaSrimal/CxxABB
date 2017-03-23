@@ -1,0 +1,121 @@
+PrjCompX/
+├── Source
+│   ├── Branches
+│   ├── Tags
+│   └── Trunk
+│       ├── ModuleA
+│       │   ├── Makefile
+│       │   ├── obj
+│       │   └── src
+│       │       └── Main.cpp
+│       └── ModuleB
+└── Workspaces
+    ├── Main
+    │   ├── backup
+    │   │   ├── bin
+    │   │   ├── lib
+    │   │   └── log
+    │   │       └── 20120905_131521
+    │   ├── bin
+    │   │   ├── <binname>
+    │   │   ├── start
+    │   │   └── stop
+    │   ├── build									- SVN Ext to BuildCore
+    │   │   ├── Common.mk
+    │   │   ├── config
+    │   │   │   └── Linux.i686.mk
+    │   │   ├── Functions.mk
+    │   │   ├── rules
+    │   │   │   ├── compile
+    │   │   │   ├── dynlib
+    │   │   │   ├── exec
+    │   │   │   ├── global
+    │   │   │   └── lib
+    │   │   └── scripts
+    │   │       └── makedepend.gcc
+    │   ├── config
+    |   |   ├── Config.xml
+    |   |   └── DevConfig.xml 
+    │   ├── dist
+    |   |   └── ReleaseXXX.tar.bz2
+    │   ├── lib
+    │   │   ├── libCxxAbbCore.a
+    │   │   └── libCxxAbbCore.so
+    │   ├── log
+    │   ├── Makefile
+    │   ├── Nmakefile
+    │   ├── scripts
+    │   │   └── dbscripts
+    │   ├── src
+    │   │   ├── CxxAbbCore								- SVN Ext to CxxAbbCore/Source/Trunk
+    │   │   │   ├── include
+    │   │   │   │   └── CxxAbb
+    │   │   │   │       ├── Atomicity.h
+    │   │   │   │       └── Types.h
+    │   │   │   ├── Makefile
+    │   │   │   ├── obj
+    │   │   │   │   ├── Atomicity.o
+    │   │   │   │   ├── Mutex.o
+    │   │   │   │   └── posix
+    │   │   │   │       └── MutexImpl.o
+    │   │   │   └── src
+    │   │   │       ├── Atomicity.cpp
+    │   │   │       ├── Mutex.cpp
+    │   │   │       ├── posix
+    │   │   │       │   ├── Atomicity.gcc.cpp
+    │   │   │       │   ├── MutexImpl.cpp
+    │   │   │       │   └── MutexImpl.h
+    │   │   │       └── win32
+    │   │   │           └── Atomicity.win.cpp
+    │   │   └── ModuleA									- SVN Ext to ModuleA/Source/Trunk OR PrjCompX/Source/Trunk/ModuleA
+    │   │       ├── Makefile
+    │   │       ├── obj
+    │   │       │   └── Main.o
+    │   │       └── src
+    │   │           └── Main.cpp
+    │   ├── tools
+    │   └── User.mk
+    └── Release1
+        ├── backup
+        ├── bin
+        │   └── Main
+        ├── build
+        │   ├── Common.mk
+        │   ├── config
+        │   │   └── Linux.i686.mk
+        │   ├── Functions.mk
+        │   ├── rules
+        │   │   ├── compile
+        │   │   ├── dynlib
+        │   │   ├── exec
+        │   │   ├── global
+        │   │   └── lib
+        │   └── scripts
+        │       └── makedepend.gcc
+        ├── config
+        ├── lib
+        │   ├── libCxxAbbCore.a
+        │   └── libCxxAbbCore.so
+        ├── log
+        ├── Makefile
+        ├── Nmakefile
+        ├── scripts
+        │   └── dbscripts
+        ├── src
+        │   ├── CxxAbbCore
+        │   │   ├── include
+        │   │   │   └── CxxAbb
+        │   │   │       └── Types.h
+        │   │   ├── Makefile
+        │   │   ├── obj
+        │   │   │   ├── Atomicity.o
+        │   │   └── src
+        │   │       └── Atomicity.win.cpp
+        │   └── ModuleA
+        │       ├── Makefile
+        │       ├── obj
+        │       │   └── posix
+        │       └── src
+        │           └── Main.cpp
+        ├── tools
+        └── User.mk

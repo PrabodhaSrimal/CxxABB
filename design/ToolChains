@@ -1,0 +1,18 @@
+CXX version mismatch avoiding
+=============================
+
+1. Install older compiler (g++)
+
+2. Create a ToolChain for each configuration
+
+Compiler - g++, gcc
+Linker - ld
+Debugger - gdb
+Libs - libstdc++, glibc
+Tools - readelf, binutils,
+Profilers - oprofile, gproff
+Strace, Valgrind, objdump
+
+Test coverage - gcov
+Static Check - cppcheck
+Lint - pclint

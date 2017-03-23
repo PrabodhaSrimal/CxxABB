@@ -1,0 +1,43 @@
+$ svn propset svn:keywords "Revision" source_file.c
+property 'svn:keywords' set on 'source_file.c'
+$
+
+
+Subversion defines the list of keywords available for substitution. That list contains the following five keywords, some of which have shorter aliases that you can also use:
+
+LastChangedDate
+This keyword describes the last time the file was known to have been changed in the repository, and looks something like $LastChangedDate: 2002-07-22 21:42:37 -0700 (Mon, 22 Jul 2002) $. It may be abbreviated as Date.
+
+LastChangedRevision
+This keyword describes the last known revision in which this file changed in the repository, and looks something like $LastChangedRevision: 144 $. It may be abbreviated as Revision or Rev.
+
+LastChangedBy
+This keyword describes the last known user to change this file in the repository, and looks something like $LastChangedBy: harry $. It may be abbreviated as Author.
+
+HeadURL
+This keyword describes the full URL to the latest version of the file in the repository, and looks something like $HeadURL: http://svn.collab.net/repos/trunk/README $. It may be abbreviated as URL.
+
+Id
+This keyword is a compressed combination of the other keywords. Its substitution looks something like $Id: calc.c 148 2002-07-28 21:30:43Z sally $, and is interpreted to mean that the file calc.c was last changed in revision 148 on the evening of July 28, 2002 by the user sally.
+
+// $Id: //poco/1.4/Foundation/include/Poco/Bugcheck.h#1 $
+# $Id: //poco/1.4/Foundation/Makefile#2 $
+
+
+----------------------------------------------------------------------------------------------------
+
+svn propset svn:externals 'local_dir http://external/dir/url' .
+property 'svn:externals' set on '.'
+
+svn commit
+svn update
+
+----------------------------------------------------------------------------------------------------
+
+svn propset svn:externals -F ext.file .
+
+vi ext.file
+local_dir http://external/dir/url
+
+external to specific revision
+svn propset svn:externals 'akismet -r 22 http://plugins.svn.wordpress.org/akismet/trunk' .

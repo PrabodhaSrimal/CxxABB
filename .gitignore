@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+
+.svn
+*.d
+.cproject
+.project
+.settings
